@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Arku$Bank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="ArkusBank.png">
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="#">Comece a insvestir</a>
+                    <a href="#">Simulador</a>
+                    <a href="#">Investimentos</a>
+                    <a href="#">Preço</a>
+                    <a href="#">Blog</a>
+                    <a href="#">InvestNews</a>
+                </nav>
+            </div>
+            <div class="btroxo">
+                <p>Login</p>
+                <img src="enter.png">
+            </div>
+        </div>
+    </header>
+    <div class="roxo">
+        <p>Arku$Invest
+            >
+            Simulador de investimentos
+            <br>
+            <br>
+        <h1>Simulador de investimentos</h1><br>
+        <p> Conheça o simulador de investimentos da ArkusInvest. Veja quanto seu dinheiro pode render ao simular
+            investimentos de tesouro direto, CDB e LC, LCI <br>e LCA em relação a poupança.</p>
+        </p>
+    </div>
+    <div class="Simule">
+        <h5>Simule agora</h5>
+        <p>Faça uma comparação e comece a investir em uma experiência fácil e intuitiva:
+        </p>
+    </div>
+    <div class=separar></div>
+    <div class="container2">
+        <div class="fonte">
+            <h3>Para começar, qual valor você <br> gostaria de investir?
+                <br>
+                <span contenteditable="true" id="contador">R$0</span>
+            </h3>
+        </div>
+        <button id="botao" onclick="aumentar()">+</button>
+        <button id="botao" onclick="diminuir()">-</button>
+        <div class="fonte">
+            <h3>E por mês, quanto gostaria de<br> depositar?
+                <br>
+                <span contenteditable="true" id="contador2">R$0</span>
+            </h3>
+        </div>
+        <button id="botao" onclick="aumentar2()">+</button>
+        <button id="botao" onclick="diminuir2()">-</button>
+        <div class="range">
+            <h3>Quanto tempo deixaria seu dinheiro investido?</h3>
+            <p id="displayText">Mes:</p>
+            <input type="range" min="1" max="360" value="50" id="rangeInput">
+        </div>
+        <div class="produto">
+            <p>Conheça esse produto</p>
+        </div>
+    </div>
+    <footer class="container3">
+        <div class="primeiro">
+            <div class="div1">
+                <a href="#">Sobre nós</a><br>
+                <a href="#">Quem somos</a><br>
+                <a href="#">Carreiras ↗</a><br>
+                <a href="#">Segurança</a><br>
+                <a href="#">Ouvidoria</a><br>
+                <a href="#">Atendimento</a><br>
+                <a href="#">Nossos Resultados</a>
+            </div>
+            <div class="div2">
+                <a href="#">Primeiro Passos </a><br>
+                <a href="#">Como começar a investir</a><br>
+                <a href="#">Quiz de perfil</a><br>
+                <a href="#">Central de ajuda →</a><br>
+                <a href="#">Preços</a><br>
+                <a href="#">Canal YouTube ↗</a>
+            </div>
+            <div class="div3">
+                <a href="#">Investimentos</a><br>
+                <a href="#">BDR</a><br>
+                <a href="#">Tesouro Direto</a><br>
+                <a href="#">LCI e LCA </a><br>
+                <a href="#">CDB e LC</a><br>
+                <a href="#">Fundos do Investimentos</a><br>
+                <a href="#">Comparador de Fundos</a><br>
+                <a href="#">Renda Variável</a><br>
+                <a href="#">Mercado Futuro</a>
+            </div>
+            <div class="div4">
+                <a href="#">Simulador</a><br>
+                <a href="#">Tesouro Prefixado</a><br>
+                <a href="#">Tesouro Selic</a><br>
+                <a href="#">Tesouro IPCA+</a><br>
+                <a href="#">CDB e LC</a><br>
+                <a href="#">LCI e LCA</a><br><br>
+                <a href="#">Plataformas para Trader</a>
+            </div>
+        </div>
+        <div class="segundo">
+            <div class="div5">
+                <a href="#">Conteúdos</a><br>
+                <a href="#">Blog ↗</a><br>
+                <a href="#">InvestNews ↗</a><br>
+                <a href="#">NMI ↗</a>
+            </div>
+            <div class="div6">
+                <a href="#">Fale conosco</a><br>
+                <a href="#">Dúvidas frequentes</a><br>
+                <a href="#">arkus@arkus.com.br</a><br>
+                <a href="#">Tel.:(19)1122-3344</a><br>
+                <a href="#">em dias úteis, das 9hr às 18hr</a><br>
+                <a href="#">SAC 0800 168 2265</a>
+            </div>
+            <div class="div7">
+                <a href="#">Ouvidoria</a><br>
+                <a href="#">0800 727 7784</a><br>
+                <a href="#">ouvidoria@arkusinvest.com.br</a><br>
+                <a href="#">Atendimento das 9h às 18h (dias úteis)</a><br>
+            </div>
+            <div class="div8">
+                <a href="#">Entre em contato com agente:</a><br>
+                <a href="#">Se voçê é jornalista:</a><br>
+                <a href="#">press@arkus.com.br</a><br>
+                <a href="#">Convites para eventos:</a><br>
+                <a href="#">events@arkus.com.br</a><br>
+                <a href="#">Patrocínios e publicidade:</a><br><br>
+                <a href="#">marketing@arkus.com.br</a>
+            </div>
+        </div>
+        <div class="linha1"></div>
+        <div class="imgarkus">
+            <img src="fundoremovido.png">
+        </div>
+        <div class="endereço">
+            <p>Rua Anèsia Venturini Zani, nº 62, Jaguariuna,<br> CEP 13820-000, São Paulo - SP</p>
+        </div>
+        <div class="sociais">
+            <div class="i1">
+                <img src="instagram.png">
+            </div>
+            <div class="i2">
+                <img src="IN.png">
+            </div>
+            <div class="i3">
+                <img src="twitter.png">
+            </div>
+            <div class="i4">
+                <img src="youtube.png">
+            </div>
+        </div>
+        <div class="linha2"></div>
+        <div class="escrita1">
+            <p>Tesouro Direto | B3 Brasil Bolsa Balcão | Banco Central | BSM | <br>CVM | SCR | ANBIMA | CEI | Como
+                investir
+                | Assembleias e Fatos Relevantes </p>
+            <p> Política de privacidade | Política de Cibersegurança | Termos de uso
+                | Regulamentação | Canal de Denúncia</p>
+        </div>
+        <div class="escrita2">
+            <p>Bem-vindo ao site ARKU$. Valorizamos a transparência e a comunicação eficaz com nossos clientes. Abaixo,
+                destacamos informações cruciais que visam proporcionar uma experiência segura e esclarecedora enquanto
+                navega em nosso portal.
+                Mantenha-se informado sobre como tratamos suas informações pessoais. Nossa Política de Privacidade
+                detalha o uso, a coleta e a proteção dos dados dos clientes.
+                É importante entender os termos que regem o uso deste site. Recomendamos a leitura cuidadosa de nossos
+                Termos de Uso para garantir uma experiência satisfatória e em conformidade.
+                Sua segurança é nossa prioridade. Conheça as melhores práticas para manter suas informações seguras
+                online.
+                Para dúvidas, preocupações ou suporte técnico, nossa equipe está pronta para ajudar. Entre em contato
+                conosco por telefone ou e-mail. Tel.: (19) 9999-9999 Email: arkusbank@gmail.com
+                Acesse informações importantes rapidamente através de nossas páginas úteis, incluindo Perguntas
+                Frequentes, Central de Ajuda e detalhes sobre nossos Produtos e Serviços.
+                Estamos em conformidade com as regulamentações do Banco Central do Brasil e nos esforçamos para garantir
+                a segurança de suas transações online.
+                Fique atento aos nossos avisos importantes, especialmente sobre práticas de phishing. Nunca
+                solicitaremos informações confidenciais por e-mail.
+                Mantenha-se informado sobre atualizações no site e alterações nos termos e condições. Estamos
+                comprometidos em manter nossos serviços aados com suas expectativas.
+                Conheça nossos esforços para práticas bancárias socialmente responsáveis e compromissos com a
+                sustentabilidade.
+                Agradecemos por escolher ARKU$. Estamos aqui para servi-lo, oferecendo uma experiência bancária online
+                segura, eficiente e transparente. Caso tenha alguma dúvida, entre em contato conosco.</p>
+        </div>
+        <div class="imagens">
+            <div class="td">
+                <img src="tesouroDireto.jpg">
+            </div>
+            <div class="cmv">
+                <img src="cvm.png">
+            </div>
+            <div class="anbima1">
+                <img src="anbimaDP.jpg">
+            </div>
+            <div class="anbima2">
+                <img src="anbimaO.jpg">
+            </div>
+    </footer>
+
+
+</body>
+<script src="grupo.js"></script>
+
+</html>
